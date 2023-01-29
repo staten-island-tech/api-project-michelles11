@@ -1,0 +1,98 @@
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+:root {
+  --light-red: #f87171;
+  --dark-red: #dc2626;
+  --burgundy: #d32c3f;
+  --lime: #bedd22;
+  --dark-green: #046307;
+  --light-blue: #349dcb;
+  --dark-blue: #4447bb;
+  --light-orange: #fc8b03;
+  --yellow: #fad805;
+  --brown: #964b00;
+  --gray: #252c30;
+  --black: #000;
+  --white: #ffffff;
+  /*Intentions*/
+  --primary: var(--light-red);
+  --secondary: var(--dark-red);
+  --font-size: var(--h1);
+  /*Typography */
+  --h1: 7.594rem;
+  --h2: 5.063rem;
+  --h3: 3.375rem;
+  --h4: 2.25rem;
+  --h5: 1.5rem;
+}
+.title {
+  background-color: var(--primary);
+  font-size: var(--h1);
+  text-align: center;
+}
+.main {
+  background-color: var(--secondary);
+  height: 90vh;
+}
+
+h1 {
+  font-size: var(--h1);
+  background-color: var(--primary);
+}
+h2 {
+  font-size: var(--h2);
+}
+h3 {
+  font-size: var(--h3);
+}
+h4 {
+  font-size: var(--h4);
+}
+h5 {
+  font-size: var(--h5);
+}
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  margin: 1rem auto;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10rem;
+  transition: all 0.2s;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
+}
+.card {
+  width: 500px;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
+  background-color: antiquewhite;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image {
+  height: 30vh;
+  border-radius: 1rem;
+}
+.cool {
+  --primary: var(--light-blue);
+}
+.warm {
+  --primary: var(--dark-blue);
+}
