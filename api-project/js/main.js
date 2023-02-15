@@ -9,10 +9,7 @@ console.log(list);
 DOMSelectors.red.addEventListener("click", createDisplay.bind(null, "red"));
 DOMSelectors.blue.addEventListener("click", createDisplay.bind(null, "blue"));
 DOMSelectors.green.addEventListener("click", createDisplay.bind(null, "green"));
-DOMSelectors.orange.addEventListener(
-  "click",
-  createDisplay.bind(null, "orange")
-);
+DOMSelectors.orange.addEventListener("click", createDisplay.bind(null, "orange"));
 
 DOMSelectors.theme.addEventListener("click", function () {
   if (document.body.classList.contains("cool")) {
