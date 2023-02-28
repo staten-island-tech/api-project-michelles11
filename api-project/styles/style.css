@@ -14,7 +14,7 @@ body,
   --lime: #bedd22;
   --dark-green: #046307;
   --light-blue: #349dcb;
-  --dark-blue: #4447bb;
+  --dark-blue: #;
   --light-orange: #fc8b03;
   --yellow: #fad805;
   --brown: #964b00;
@@ -94,5 +94,5 @@ h5 {
   --primary: var(--light-blue);
 }
 .warm {
-  --primary: var(--dark-blue);
+  --primary: var(--light-red);
 }
