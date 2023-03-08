@@ -29,8 +29,8 @@ function createDisplay(schoolColor) {
       "beforeend",
       `<div class="card">
           <h2>${school.name}</h2>
-          <img class="image" src="${school.image}" alt="university logo">
-          <h4/></div>`
+          <img class="image" src="${school.image}" alt="${school.desc}">
+          </div>`
     );
     const apiResponseDOM = DOMSelectors.Display.lastElementChild;
     const putQuoteInHTML = async () => {
