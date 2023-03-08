@@ -39,7 +39,7 @@ function createDisplay(schoolColor) {
 
       apiResponseDOM.insertAdjacentHTML(
         "beforeend",
-        `<h4>${quote.content}</h4>`
+        `<h3>${quote.content}</h3>`
       );
     };
     putQuoteInHTML();
