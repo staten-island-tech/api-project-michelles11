@@ -29,7 +29,7 @@ function createDisplay(schoolColor) {
       "beforeend",
       `<div class="card">
           <h2>${school.name}</h2>
-          <img class="image" src="${school.image}" alt="">
+          <img class="image" src="${school.image}" alt="university logo">
           <h4/></div>`
     );
     const apiResponseDOM = DOMSelectors.Display.lastElementChild;
