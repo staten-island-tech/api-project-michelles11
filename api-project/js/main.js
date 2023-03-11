@@ -9,10 +9,7 @@ console.log(list);
 DOMSelectors.red.addEventListener("click", createDisplay.bind(null, "red"));
 DOMSelectors.blue.addEventListener("click", createDisplay.bind(null, "blue"));
 DOMSelectors.green.addEventListener("click", createDisplay.bind(null, "green"));
-DOMSelectors.orange.addEventListener(
-  "click",
-  createDisplay.bind(null, "orange")
-);
+DOMSelectors.orange.addEventListener("click", createDisplay.bind(null, "orange"));
 
 DOMSelectors.theme.addEventListener("click", function () {
   if (document.body.classList.contains("cool")) {
@@ -32,8 +29,8 @@ function createDisplay(schoolColor) {
       "beforeend",
       `<div class="card">
           <h2>${school.name}</h2>
-          <img class="image" src="${school.image}" alt="">
-          <h4/></div>`
+          <img class="image" src="${school.image}" alt="${school.desc}">
+          </div>`
     );
     const apiResponseDOM = DOMSelectors.Display.lastElementChild;
     const putQuoteInHTML = async () => {
@@ -42,7 +39,7 @@ function createDisplay(schoolColor) {
 
       apiResponseDOM.insertAdjacentHTML(
         "beforeend",
-        `<h4>${quote.content}</h4>`
+        `<h3>${quote.content}</h3>`
       );
     };
     putQuoteInHTML();
